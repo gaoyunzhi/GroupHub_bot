@@ -39,6 +39,6 @@ def handle(update, context):
 
 if __name__ == '__main__':
 	dp = tele.dispatcher
-	dp.add_handler(MessageHandler(Filters.any, handle))
+	dp.add_handler(MessageHandler(Filters.all, handle))
 	tele.start_polling()
 	tele.idle()
