@@ -31,11 +31,12 @@ HELP_MESSAGE = '''
 读书讨论 @dushufenxiang_chat
 写作讨论 @writing_exchange
 
+更多推荐 https://bit.ly/35UdTaE
 推荐群组，请联系 @b4cxb
 '''
 
 def handle(update, context):
-	update.message.reply_text(HELP_MESSAGE)
+	update.message.reply_text(HELP_MESSAGE, disable_web_page_preview=True)
 
 if __name__ == '__main__':
 	dp = tele.dispatcher
