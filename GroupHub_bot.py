@@ -6,7 +6,6 @@ import yaml
 
 with open('credential') as f:
 	credential = yaml.load(f, Loader=yaml.FullLoader)
-export_to_telegraph.token = credential['telegraph_token']
 
 tele = Updater(credential['bot_token'], use_context=True) # @GroupHub_bot
 
