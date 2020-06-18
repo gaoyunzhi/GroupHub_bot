@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from telegram.ext import Updater, MessageHandler, Filters
+import yaml
 
 with open('credential') as f:
 	credential = yaml.load(f, Loader=yaml.FullLoader)
